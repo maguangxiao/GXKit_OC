@@ -1,23 +1,23 @@
 //
-//  HomeViewController.m
+//  MineViewController.m
 //  GXKit_OC
 //
 //  Created by GuangXiao on 2018/2/24.
 //  Copyright © 2018年 guangxiao. All rights reserved.
 //
 
-#import "HomeViewController.h"
-#import "HomeMultiThreadingViewController.h"
-@interface HomeViewController ()
+#import "MineViewController.h"
+
+@interface MineViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation MineViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"首页";
+    self.title = @"我的";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,10 +25,6 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void) touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    HomeMultiThreadingViewController * vc = [[HomeMultiThreadingViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:true];
-}
 /*
 #pragma mark - Navigation
 

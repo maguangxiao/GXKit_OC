@@ -1,5 +1,5 @@
 //
-//  HomeViewController.h
+//  GXViewController.h
 //  GXKit_OC
 //
 //  Created by GuangXiao on 2018/2/24.
@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GXViewController.h"
-@interface HomeViewController : GXViewController
+
+@interface GXViewController : UIViewController
 
 @end

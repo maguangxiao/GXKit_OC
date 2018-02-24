@@ -14,6 +14,10 @@
 		402DDAF220410ADE0005B0B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 402DDAF120410ADE0005B0B4 /* main.m */; };
 		402DDB0B2041100C0005B0B4 /* HomeMultiThreadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402DDB0A2041100C0005B0B4 /* HomeMultiThreadingViewController.m */; };
 		402DDB0E204110270005B0B4 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402DDB0D204110270005B0B4 /* HomeViewController.m */; };
+		402DDB12204168050005B0B4 /* GXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402DDB11204168050005B0B4 /* GXNavigationController.m */; };
+		402DDB15204168960005B0B4 /* GXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402DDB14204168960005B0B4 /* GXTabBarController.m */; };
+		402DDB1A20416BD50005B0B4 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402DDB1920416BD50005B0B4 /* MineViewController.m */; };
+		402DDB1D204171560005B0B4 /* GXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402DDB1C204171560005B0B4 /* GXViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,14 @@
 		402DDB0A2041100C0005B0B4 /* HomeMultiThreadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeMultiThreadingViewController.m; sourceTree = "<group>"; };
 		402DDB0C204110270005B0B4 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		402DDB0D204110270005B0B4 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		402DDB10204168050005B0B4 /* GXNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXNavigationController.h; sourceTree = "<group>"; };
+		402DDB11204168050005B0B4 /* GXNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXNavigationController.m; sourceTree = "<group>"; };
+		402DDB13204168960005B0B4 /* GXTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXTabBarController.h; sourceTree = "<group>"; };
+		402DDB14204168960005B0B4 /* GXTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXTabBarController.m; sourceTree = "<group>"; };
+		402DDB1820416BD50005B0B4 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		402DDB1920416BD50005B0B4 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		402DDB1B204171560005B0B4 /* GXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXViewController.h; sourceTree = "<group>"; };
+		402DDB1C204171560005B0B4 /* GXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +146,12 @@
 		402DDB0020410E1F0005B0B4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				402DDB10204168050005B0B4 /* GXNavigationController.h */,
+				402DDB11204168050005B0B4 /* GXNavigationController.m */,
+				402DDB13204168960005B0B4 /* GXTabBarController.h */,
+				402DDB14204168960005B0B4 /* GXTabBarController.m */,
+				402DDB1B204171560005B0B4 /* GXViewController.h */,
+				402DDB1C204171560005B0B4 /* GXViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -184,6 +202,7 @@
 		402DDB0620410E650005B0B4 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				402DDB1620416BAF0005B0B4 /* mine */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -202,6 +221,23 @@
 				402DDB0A2041100C0005B0B4 /* HomeMultiThreadingViewController.m */,
 			);
 			path = multiThreading;
+			sourceTree = "<group>";
+		};
+		402DDB1620416BAF0005B0B4 /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				402DDB1720416BBA0005B0B4 /* Controller */,
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
+		402DDB1720416BBA0005B0B4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				402DDB1820416BD50005B0B4 /* MineViewController.h */,
+				402DDB1920416BD50005B0B4 /* MineViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,11 +310,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				402DDB12204168050005B0B4 /* GXNavigationController.m in Sources */,
 				402DDAE120410ADE0005B0B4 /* AppDelegate.m in Sources */,
+				402DDB15204168960005B0B4 /* GXTabBarController.m in Sources */,
 				402DDAF220410ADE0005B0B4 /* main.m in Sources */,
 				402DDAEA20410ADE0005B0B4 /* GXKit_OC.xcdatamodeld in Sources */,
 				402DDB0B2041100C0005B0B4 /* HomeMultiThreadingViewController.m in Sources */,
 				402DDB0E204110270005B0B4 /* HomeViewController.m in Sources */,
+				402DDB1D204171560005B0B4 /* GXViewController.m in Sources */,
+				402DDB1A20416BD50005B0B4 /* MineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,23 +1,22 @@
 //
-//  HomeViewController.m
+//  GXNavigationController.m
 //  GXKit_OC
 //
 //  Created by GuangXiao on 2018/2/24.
 //  Copyright © 2018年 guangxiao. All rights reserved.
 //
 
-#import "HomeViewController.h"
-#import "HomeMultiThreadingViewController.h"
-@interface HomeViewController ()
+#import "GXNavigationController.h"
+
+@interface GXNavigationController ()
 
 @end
 
-@implementation HomeViewController
+@implementation GXNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"首页";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,9 +24,11 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void) touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    HomeMultiThreadingViewController * vc = [[HomeMultiThreadingViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:true];
+- (void) pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    if (self.childViewControllers.count > 0){
+        viewController.hidesBottomBarWhenPushed = true;
+    }
+    [super pushViewController:viewController animated:animated];
 }
 /*
 #pragma mark - Navigation

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HomeViewController.h"
+#import "GXTabBarController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,9 +19,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] init];
-    HomeViewController * homeVC = [[HomeViewController alloc] init];
-    UINavigationController * navVC = [[UINavigationController alloc] initWithRootViewController:homeVC];
-    [self.window setRootViewController: navVC];
+    GXTabBarController * tabBarVC = [[GXTabBarController alloc] init];
+//    HomeViewController * homeVC = [[HomeViewController alloc] init];
+//    UINavigationController * navVC = [[UINavigationController alloc] initWithRootViewController:homeVC];
+    [self.window setRootViewController: tabBarVC];
     [self.window makeKeyAndVisible];
     return YES;
 }
