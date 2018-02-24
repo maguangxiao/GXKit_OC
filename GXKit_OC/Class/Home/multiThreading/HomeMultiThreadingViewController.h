@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HomeMultiThreadingViewController.h
 //  GXKit_OC
 //
 //  Created by GuangXiao on 2018/2/24.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HomeMultiThreadingViewController : UIViewController
 
 @end
-
